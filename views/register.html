@@ -17,6 +17,7 @@
     <br>
 	<br>
 	<div class="container">
+		
 		<form action="home.html">
 			<!--
 				Todo: Create a form with the following fields:
@@ -66,9 +67,50 @@
 						<input type="password" id="pwconf" name="pw_confirm">
 					</td>
 				</tr>
+				<tr>
+					<th>
+						Student/Alumni:
+					</th>
+					<td>
+						<input type="radio" name="student-alum" value="student" checked> Student
+						<input type="radio" name="student-alum" value="alumni"> Alumni
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Undergrad/Grad:
+					</th>
+					<td>
+						<input type="radio" name="undergrad-grad" value="undergrad"> Undergrad
+						<input type="radio" name="undergrad-grad" value="alumni"> Grad
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Undergrad Year: 
+					</th>
+					<td>
+						<select name="select_choice">
+						  <option selected>Freshman</option>
+						  <option value="1">Sophomore</option>
+						  <option value="2">Junior</option>
+						  <option value="3">Senior</option>
+						</select>
+					</td>
+				</tr>
+				<th>
+						Graduate Program: 
+					</th>
+					<td>
+						<select name="select_choice">
+						  <option selected>MA</option>
+						  <option value="1">MBA</option>
+						  <option value="2">PhD</option>
+						</select>
+					</td>
 			
 			</table>
-					<input type="submit" value="submit" class="btn btn-primary btn-block">
+					<input type="submit" value="Submit" class="btn btn-primary btn-lg">
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
